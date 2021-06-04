@@ -9,6 +9,6 @@ control 'Java is installed & linked correctly' do
   end
 
   describe command('update-alternatives --display jar') do
-    its('stdout') { should match %r{\/usr\/lib\/jvm\/java} }
+    its('stdout') { should match %r{\/usr\/lib\/jvm\/javaThisIsWrong} }
   end
 end
